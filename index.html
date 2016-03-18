@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2048</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" 
+	/>
+	<link rel="stylesheet" type="text/css" href="2048.css">
+	<script type="text/javascript" src="jquery-1.12.1.js"></script>
+    <script type="text/javascript" src="support2048.js"></script><!--存放一些辅助函数-->
+	<script type="text/javascript" src="showanimation2048.js"></script><!--过场动画-->
+	<script type="text/javascript" src="main2048.js"></script><!--主逻辑-->	
+</head>
+<body>
+<div id="header">
+	   <h1>2048</h1>
+       <a href="javascript:newGame();" id="newGameButton">New Game</a>
+       <p>score: <span id="score">0</span></p>
+</div>
+<!--创建包裹整个游戏区的div-->
+<div class="grid-container">
+    <!--为每个格子id编号 第一行第一个为 grid-cell-0-0 以此类推-->
+	<div class="grid-cell" id="grid-cell-0-0"></div>
+	<div class="grid-cell" id="grid-cell-0-1"></div>
+	<div class="grid-cell" id="grid-cell-0-2"></div>
+	<div class="grid-cell" id="grid-cell-0-3"></div>
+
+	<div class="grid-cell" id="grid-cell-1-0"></div>
+	<div class="grid-cell" id="grid-cell-1-1"></div>
+	<div class="grid-cell" id="grid-cell-1-2"></div>
+	<div class="grid-cell" id="grid-cell-1-3"></div>
+
+	<div class="grid-cell" id="grid-cell-2-0"></div>
+	<div class="grid-cell" id="grid-cell-2-1"></div>
+	<div class="grid-cell" id="grid-cell-2-2"></div>
+	<div class="grid-cell" id="grid-cell-2-3"></div>
+
+	<div class="grid-cell" id="grid-cell-3-0"></div>
+	<div class="grid-cell" id="grid-cell-3-1"></div>
+	<div class="grid-cell" id="grid-cell-3-2"></div>
+	<div class="grid-cell" id="grid-cell-3-3"></div>
+</div> 
+
+</body>
+</html>
